@@ -1,0 +1,168 @@
+# The setup skill uses these sources, prerequisites and local guides.
+schema = 1
+starter_pitch = "Four small habits for any project your agent works in: clear project instructions, tidy commits, recorded decisions and short summaries."
+
+# ── Skills ───────────────────────────────────────────────────────────────────
+
+[[skills]]
+id = "init-agents-md"
+repo = "zazencodes/skills"
+path = "skills/init-agents-md"
+pitch = "Writes a lean, repo-specific AGENTS.md and links CLAUDE.md to it."
+starter = true
+needs = []
+
+[[skills]]
+id = "git-commit-conventions"
+repo = "zazencodes/skills"
+path = "skills/git-commit-conventions"
+pitch = "Makes focused commits with short messages and your git authorship."
+starter = true
+needs = []
+
+[[skills]]
+id = "adr"
+repo = "zazencodes/skills"
+path = "skills/adr"
+pitch = "Records decisions as Architecture Decision Records and reads them before changing things."
+starter = true
+needs = []
+
+[[skills]]
+id = "tldr"
+repo = "zazencodes/skills"
+path = "skills/tldr"
+pitch = "Summarizes replies in a few clear bullets."
+starter = true
+needs = []
+
+[[skills]]
+id = "ascii-viz"
+repo = "zazencodes/skills"
+path = "skills/ascii-viz"
+pitch = "Answers with ASCII diagrams and charts where they help."
+starter = false
+needs = []
+
+[[skills]]
+id = "humanizer-tryhard"
+repo = "zazencodes/skills"
+path = "skills/humanizer-tryhard"
+pitch = "Revises prose in repeated editorial passes until it stops sounding generated."
+starter = false
+needs = []
+
+[[skills]]
+id = "codex-image-gen"
+repo = "zazencodes/skills"
+path = "skills/codex-image-gen"
+pitch = "Generates and edits images using your ChatGPT login."
+starter = false
+needs = ["Codex CLI, signed in with ChatGPT"]
+
+[[skills]]
+id = "gemini-web-research"
+repo = "zazencodes/skills"
+path = "skills/gemini-web-research"
+pitch = "Runs parallel Gemini research jobs and verifies their findings."
+starter = false
+needs = ["Gemini CLI or Antigravity, signed in"]
+
+[[skills]]
+id = "terminal-explainer"
+repo = "zazencodes/skills"
+path = "skills/terminal-explainer"
+pitch = "Opens illustrated terminal walkthroughs of a change and returns your review feedback."
+starter = false
+needs = ["uv", "macOS or Linux"]
+
+[[skills]]
+id = "tavily-text"
+repo = "zazencodes/skills"
+path = "skills/tavily-text"
+pitch = "Sets headlines in letters that alternate between a pixel font and a serif italic."
+starter = false
+needs = []
+
+[[skills]]
+id = "random-number-generator"
+repo = "zazencodes/skills"
+path = "skills/random-number-generator"
+pitch = "Generates random numbers, picks, shuffles, samples and secure tokens."
+starter = false
+needs = ["Python 3"]
+
+[[skills]]
+id = "japanese-only"
+repo = "zazencodes/skills"
+path = "skills/japanese-only"
+pitch = "Keeps replies in Japanese until you turn it off."
+starter = false
+needs = []
+
+# ── Extensions ───────────────────────────────────────────────────────────────
+
+[[extensions]]
+id = "agent-plane"
+name = "Agent Plane"
+repo = "zazencodes/tmux-agent-plane"
+status = "available"
+category = "Developer tools"
+platforms = ["macos", "linux"]
+pitch = "See and steer every coding agent running in your tmux, and let agents hand work to each other."
+say_yes_if = "You run more than one agent at a time."
+needs = ["tmux 3.3 or newer", "Rust and a C compiler, to build it"]
+requires = []
+guide = "extensions/agent-plane.md"
+
+[[extensions]]
+id = "snippets"
+name = "Snippets"
+repo = "zazencodes/snippets"
+status = "available"
+category = "Developer tools"
+platforms = ["macos", "linux"]
+pitch = "Save the instructions you keep retyping and add them to a message in a couple of keystrokes."
+say_yes_if = "You type the same few instructions to your agent again and again."
+needs = ["Claude Code, Codex, Pi or OpenCode"]
+requires = []
+guide = "extensions/snippets.md"
+
+[[extensions]]
+id = "koyomi"
+name = "Koyomi"
+repo = "zazencodes/koyomi"
+status = "available"
+category = "Productivity"
+platforms = ["macos", "linux"]
+pitch = "Run jobs on a schedule across your machines and get an email when one fails."
+say_yes_if = "You want agents or scripts to run while you are not there."
+needs = ["uv", "Python 3.10 or later"]
+requires = []
+guide = "extensions/koyomi.md"
+
+[[extensions]]
+id = "precise-en"
+name = "precise//en"
+repo = "zazencodes/precise-en"
+status = "available"
+category = "Productivity"
+platforms = ["macos"]
+pitch = "Learn the precise English words you could have used in your own prompts, with review on your Mac and iPhone."
+say_yes_if = "You write long prompts and want a sharper vocabulary for them."
+needs = ["macOS 15 or later", "Xcode and xcodegen", "An Apple developer account", "A Cloudflare account", "Node 22"]
+requires = ["agent-plane"]
+guide = "extensions/precise-en.md"
+
+[[extensions]]
+id = "swipe-list"
+name = "Swipe List"
+repo = "zazencodes/swipe-list"
+status = "available"
+category = "Creative"
+platforms = ["macos", "linux"]
+pitch = "Save design inspiration from your phone or Mac; your agent searches it whenever it designs something."
+say_yes_if = "You screenshot or bookmark things you like and never find them again."
+needs = ["A Linux server, a domain, Tailscale and a Neon account", "A Mac with Codex, Chrome, FFmpeg and Node.js 24 or later for the worker"]
+requires = ["koyomi"]
+guide = "extensions/swipe-list.md"
