@@ -4,6 +4,10 @@ All notable changes to zstack are documented here. The format follows [Keep a Ch
 
 ## [Unreleased]
 
+### Added
+
+- Added the [`diagram-viz`](https://github.com/zazencodes/skills/tree/main/skills/diagram-viz) skill to the catalog. It draws architecture diagrams, how-it-works pictures and timelines as images in the ZazenCodes style, and needs macOS, Google Chrome and the Inter and JetBrainsMono Nerd Font fonts.
+
 ## [0.1.0] - 2026-11-24
 
 ### Added

@@ -66,6 +66,7 @@ From a terminal, run `npx skills@latest add zazencodes/skills --skill tldr`, sub
 | [`adr`](https://github.com/zazencodes/skills/tree/main/skills/adr) | Records decisions as Architecture Decision Records and reads them before changing things. |
 | [`ascii-viz`](https://github.com/zazencodes/skills/tree/main/skills/ascii-viz) | Answers with ASCII diagrams and charts where they help. |
 | [`codex-image-gen`](https://github.com/zazencodes/skills/tree/main/skills/codex-image-gen) | Generates and edits images using your ChatGPT login. |
+| [`diagram-viz`](https://github.com/zazencodes/skills/tree/main/skills/diagram-viz) | Draws diagrams and timelines as images in the ZazenCodes style. |
 | [`gemini-web-research`](https://github.com/zazencodes/skills/tree/main/skills/gemini-web-research) | Runs parallel Gemini research jobs and verifies their findings. |
 | [`git-commit-conventions`](https://github.com/zazencodes/skills/tree/main/skills/git-commit-conventions) | Makes focused commits with short messages and your git authorship. |
 | [`humanizer-tryhard`](https://github.com/zazencodes/skills/tree/main/skills/humanizer-tryhard) | Revises prose in repeated editorial passes until it stops sounding generated. |

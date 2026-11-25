@@ -45,6 +45,14 @@ starter = false
 needs = []
 
 [[skills]]
+id = "diagram-viz"
+repo = "zazencodes/skills"
+path = "skills/diagram-viz"
+pitch = "Draws diagrams and timelines as images in the ZazenCodes style."
+starter = false
+needs = ["macOS", "Google Chrome", "Inter and JetBrainsMono Nerd Font fonts"]
+
+[[skills]]
 id = "humanizer-tryhard"
 repo = "zazencodes/skills"
 path = "skills/humanizer-tryhard"
