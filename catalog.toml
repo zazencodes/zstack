@@ -169,3 +169,15 @@ say_yes_if = "You screenshot or bookmark things you like and never find them aga
 needs = ["A Linux server, a domain, Tailscale and a Neon account", "A Mac with Codex, Chrome, FFmpeg and Node.js 24 or later for the worker"]
 requires = ["koyomi"]
 guide = "extensions/swipe-list.md"
+
+[[extensions]]
+id = "motion-studio"
+name = "Motion Studio"
+repo = "zazencodes/motion-studio"
+status = "available"
+platforms = ["macos"]
+pitch = "Make short films with your agent: 3D system films under a terminal HUD, and narrated explainers of articles and news."
+say_yes_if = "You want to show how a system, a tool or a story works in a short animated film, without learning an animation app."
+needs = ["Homebrew", "Node.js 22 or later", "uv", "About 2 GB of free disk for its browser, packages and voice models"]
+requires = []
+guide = "extensions/motion-studio.md"

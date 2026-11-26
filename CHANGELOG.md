@@ -7,6 +7,7 @@ All notable changes to zstack are documented here. The format follows [Keep a Ch
 ### Added
 
 - Added the [`diagram-viz`](https://github.com/zazencodes/skills/tree/main/skills/diagram-viz) skill to the catalog. It draws architecture diagrams, how-it-works pictures and timelines as images in the ZazenCodes style, and needs macOS, Google Chrome and the Inter and JetBrainsMono Nerd Font fonts.
+- Added the [Motion Studio](extensions/motion-studio.md) extension. Your coding agent makes 3D system films and narrated explainers as code, reviews its own frames and audio, and hands you a finished 1920x1080 mp4. It needs macOS, Homebrew, Node.js 22 or later and uv.
 
 ## [0.1.0] - 2026-11-24
 

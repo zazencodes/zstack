@@ -50,6 +50,7 @@ flowchart TD
 | [Koyomi](extensions/koyomi.md) | Schedule jobs on the machine that should run them. |
 | [precise//en](extensions/precise-en.md) | Learn a more precise word from something I wrote in a prompt. |
 | [Swipe List](extensions/swipe-list.md) | Save design references and find them again through my agent. |
+| [Motion Studio](extensions/motion-studio.md) | Make 3D system films and narrated explainers for my videos. |
 
 ## Skills
 
