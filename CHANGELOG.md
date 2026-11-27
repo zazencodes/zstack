@@ -2,6 +2,12 @@
 
 All notable changes to zstack are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Changed
+
+- The README shows how the tools work together as an image, drawn with `diagram-viz`.
+
 ## [0.2.0] - 2026-11-26
 
 ### Added

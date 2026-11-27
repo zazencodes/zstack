@@ -28,21 +28,7 @@ What happens next:
 
 ## How the tools work together
 
-```mermaid
-flowchart TD
-    snippets["Snippets"] -->|inserts saved instructions| session["Coding agent session"]
-    subgraph plane["Agent Plane"]
-        index["Session index"]
-        bg["Background agent"]
-    end
-    index -->|tracks sessions in tmux| session
-    session -->|Claude Code or Codex prompt hook| precise["precise//en"]
-    precise -->|requests a word suggestion| bg
-    koyomi["Koyomi"] -->|schedules on the Mac| worker["Swipe List worker"]
-    worker -->|processes queued items and writes tags| library["Swipe List library"]
-    capture["Phone dashboard or Mac app"] -->|saves links and screenshots| library
-    session -->|searches via the Swipe List skill and CLI| library
-```
+<img src="docs/assets/tools.png" alt="How my tools work together: Snippets, Agent Plane, precise//en, Swipe List and Koyomi around an agent session" width="100%">
 
 ## Extensions
 

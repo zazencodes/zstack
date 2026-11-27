@@ -13,11 +13,13 @@
 - `catalog.toml`: every skill and extension setup can offer. The zstack skill reads it.
 - `skills/zstack/`: the setup skill, with `references/apply.md` and `references/stack-file.md`.
 - `extensions/<id>.md`: one guide per extension.
+- `docs/assets/tools.html` and `tools.png`: the integration diagram. Read `docs/diagram.md` before changing it.
 
 ## Rules
 
 - A part changes in three places together: its `catalog.toml` entry, its README row and, for an extension, its guide.
 - A README skill row uses the catalog pitch.
+- Adding or removing an extension, or changing how tools connect, may mean updating the integration diagram.
 - An extension is `available` only when its repository is public and its install steps work for a stranger. Otherwise it is `unreleased`, and setup skips it.
 - Every guide has six headings in this order: What you get, Requirements, Installation, First task, Updating, Uninstalling. It links to the extension’s own install instructions and keeps the detail there.
 - Every file must stand alone on someone else’s computer: no private hostnames, account ids, email addresses, personal paths or real business records. Examples use fictional material.
