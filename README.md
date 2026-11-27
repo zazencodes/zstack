@@ -7,7 +7,7 @@
   <a href="https://zazencodes.com/"><img src="https://img.shields.io/badge/made%20by-ZazenCodes-black" alt="Made by ZazenCodes"></a>
 </p>
 
-I’m Alex. This is the stack I use to make videos and run ZazenCodes with coding agents. Pick the skills and tools that fit your work. Your agent sets them up together.
+I’m Alex. This is the stack I use to make videos and run ZazenCodes with coding agents.
 
 ## Install zstack
 
@@ -19,9 +19,12 @@ Clone https://github.com/zazencodes/zstack to ~/.zstack/zstack.
 Then read ~/.zstack/zstack/skills/zstack/SKILL.md and follow its instructions.
 ```
 
-First, your agent links the zstack setup skill at `~/.agents/skills/zstack` and `~/.claude/skills/zstack`. It shows you where the links point. The skill is for requests that explicitly name zstack. You can stop there or ask it to remove the zstack skill links at any time.
+What happens next:
 
-If you continue, you choose which skills and extensions you want. Choose none and setup ends with just the zstack skill. If you choose some, your agent shows you a plan, including how it will use your private skills repository, and waits for your approval. Later, ask for **zstack status**, **configure zstack**, or **update zstack**.
+- Your agent installs the zstack skill in `~/.agents/skills/zstack` and `~/.claude/skills/zstack`.
+- The skill only triggers when you say "zstack".
+- You pick the skills and extensions you want.
+- Later, ask your agent to update or reconfigure zstack.
 
 ## How the tools work together
 
