@@ -6,6 +6,7 @@ All notable changes to zstack are documented here. The format follows [Keep a Ch
 
 ### Changed
 
+- Each extension in the README now links to its own repository.
 - The README shows how the tools work together as an image, drawn with `diagram-viz`.
 
 ## [0.2.0] - 2026-11-26

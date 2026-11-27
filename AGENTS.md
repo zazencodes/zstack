@@ -18,7 +18,7 @@
 ## Rules
 
 - A part changes in three places together: its `catalog.toml` entry, its README row and, for an extension, its guide.
-- A README skill row uses the catalog pitch.
+- A README skill row uses the catalog pitch. A README extension row links to the extension's repository.
 - Adding or removing an extension, or changing how tools connect, may mean updating the integration diagram.
 - An extension is `available` only when its repository is public and its install steps work for a stranger. Otherwise it is `unreleased`, and setup skips it.
 - Every guide has six headings in this order: What you get, Requirements, Installation, First task, Updating, Uninstalling. It links to the extension’s own install instructions and keeps the detail there.

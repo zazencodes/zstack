@@ -34,12 +34,12 @@ What happens next:
 
 | Extension | What I use it for |
 | --- | --- |
-| [Agent Plane](extensions/agent-plane.md) | Find and steer my coding agents in tmux. |
-| [Snippets](extensions/snippets.md) | Insert instructions I reuse into an agent prompt. |
-| [Koyomi](extensions/koyomi.md) | Schedule jobs on the machine that should run them. |
-| [precise//en](extensions/precise-en.md) | Learn a more precise word from something I wrote in a prompt. |
-| [Swipe List](extensions/swipe-list.md) | Save design references and find them again through my agent. |
-| [Motion Studio](extensions/motion-studio.md) | Make 3D system films and narrated explainers for my videos. |
+| [Agent Plane](https://github.com/zazencodes/tmux-agent-plane) | Find and steer my coding agents in tmux. |
+| [Snippets](https://github.com/zazencodes/snippets) | Insert instructions I reuse into an agent prompt. |
+| [Koyomi](https://github.com/zazencodes/koyomi) | Schedule jobs on the machine that should run them. |
+| [precise//en](https://github.com/zazencodes/precise-en) | Learn a more precise word from something I wrote in a prompt. |
+| [Swipe List](https://github.com/zazencodes/swipe-list) | Save design references and find them again through my agent. |
+| [Motion Studio](https://github.com/zazencodes/motion-studio) | Make 3D system films and narrated explainers for my videos. |
 
 ## Skills
 
