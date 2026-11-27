@@ -14,6 +14,7 @@
 - `skills/zstack/`: the setup skill, with `references/apply.md` and `references/stack-file.md`.
 - `extensions/<id>.md`: one guide per extension.
 - `docs/assets/tools.html` and `tools.png`: the integration diagram. Read `docs/diagram.md` before changing it.
+- `.agents/`: local working notes, ignored by Git. `.agents/backlog.md` holds ideas, open questions and unfinished work Alex has raised. When he mentions something to look into later, add it there; when an item is done, delete it.
 
 ## Rules
 
