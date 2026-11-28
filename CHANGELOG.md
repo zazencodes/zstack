@@ -8,6 +8,7 @@ All notable changes to zstack are documented here. The format follows [Keep a Ch
 
 - Each extension in the README now links to its own repository.
 - The README shows how the tools work together as an image, drawn with `diagram-viz`.
+- The setup skill moved from `skills/zstack` to `.agents/skills/zstack`, with `.claude/skills` linking to it, so Codex and Claude Code load it inside the zstack checkout. If you installed an earlier version, your `zstack` skill links break after updating; paste the install prompt again to relink them.
 
 ## [0.2.0] - 2026-11-26
 

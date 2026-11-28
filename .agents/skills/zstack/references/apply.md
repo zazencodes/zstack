@@ -29,7 +29,7 @@ For a new skills repo, first confirm the Python interpreter used for the templat
 
 ## 2. The zstack skill and the stack file
 
-Link `<core>/skills/zstack` under the name `zstack` in both skill folders. Reuse matching links. If a destination contains a different skill, show it and ask before replacing it. From then on they can ask for zstack in any session.
+Link `<core>/.agents/skills/zstack` under the name `zstack` in both skill folders. Reuse matching links. If a destination contains a different skill, show it and ask before replacing it. From then on they can ask for zstack in any session.
 
 When `<skills>/zstack.toml` does not exist yet, write it as [the stack file reference](stack-file.md) defines, with `zstack`, `you` and empty `installed` lists. `zstack.home` is the parent of `<core>`, written with `~`. Step 5 brings `zstack.commit` and `zstack.updated` up to date.
 

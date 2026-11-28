@@ -16,7 +16,7 @@ Paste this into Claude Code, Codex or your coding agent of choice.
 ```text
 Set up zstack with me.
 Clone https://github.com/zazencodes/zstack to ~/.zstack/zstack.
-Then read ~/.zstack/zstack/skills/zstack/SKILL.md and follow its instructions.
+Then read ~/.zstack/zstack/.agents/skills/zstack/SKILL.md and follow its instructions.
 ```
 
 What happens next:

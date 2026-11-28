@@ -5,13 +5,13 @@ description: Use only when the user explicitly names zstack and asks to set it u
 
 # zstack
 
-Help the person choose and install the parts of Alex’s business stack that fit their work. Resolve the real path of the directory containing this SKILL.md. The checkout two directories above that directory holds `catalog.toml` and the extension guides. Use those files for the versions and dependencies this checkout supports.
+Help the person choose and install the parts of Alex’s business stack that fit their work. Resolve the real path of the directory containing this SKILL.md. The checkout three directories above that directory holds `catalog.toml` and the extension guides. Use those files for the versions and dependencies this checkout supports.
 
 ## Link the setup skill
 
 On an explicit setup request, make the setup skill available for this user before offering other parts. The checkout is the one containing this file.
 
-1. Inspect both destinations, `~/.agents/skills/zstack` and `~/.claude/skills/zstack`. Follow valid parent-directory links. Reuse an existing symlink that resolves to this checkout’s `skills/zstack` directory. If a destination is occupied by anything else or a parent link is broken, show the conflict and pause before changing either destination.
+1. Inspect both destinations, `~/.agents/skills/zstack` and `~/.claude/skills/zstack`. Follow valid parent-directory links. Reuse an existing symlink that resolves to this checkout’s `.agents/skills/zstack` directory. If a destination is occupied by anything else or a parent link is broken, show the conflict and pause before changing either destination.
 2. Create any missing parent directories and link the two names to the skill directory. Use a relative target from each destination’s resolved parent. Verify that reading SKILL.md through each link opens this file. On a partial failure, undo links created by this attempt and report the failure.
 3. Report which links you created or found, their paths, and the checkout they point to. If a link landed inside a git repository, say that it shows there as an uncommitted change. Tell the user they can ask to remove the zstack skill links. Offer to walk through the optional parts or stop here. Wait for their choice unless they already gave it.
 

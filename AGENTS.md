@@ -2,7 +2,7 @@
 
 ## Project Instructions
 
-- Asked to set up, configure, update or check zstack for someone? Read `skills/zstack/SKILL.md` and follow it. The rest of this file is for changing the hub itself.
+- Asked to set up, configure, update or check zstack for someone? Read `.agents/skills/zstack/SKILL.md` and follow it. The rest of this file is for changing the hub itself.
 - Write `zstack`, all lowercase.
 - Other repositories are read-only from here. Each skill and extension changes in its own repository.
 - Do not commit, push or tag unless the user asks.
@@ -11,10 +11,10 @@
 
 - `README.md`: the page people land on, with the install prompt, the integration diagram and the extension and skill tables.
 - `catalog.toml`: every skill and extension setup can offer. The zstack skill reads it.
-- `skills/zstack/`: the setup skill, with `references/apply.md` and `references/stack-file.md`.
+- `.agents/skills/zstack/`: the setup skill, with `references/apply.md` and `references/stack-file.md`. `.claude/skills` links to `.agents/skills`, so Codex and Claude Code both load it in this checkout.
 - `extensions/<id>.md`: one guide per extension.
 - `docs/assets/tools.html` and `tools.png`: the integration diagram. Read `docs/diagram.md` before changing it.
-- `.agents/`: local working notes, ignored by Git. `.agents/backlog.md` holds ideas, open questions and unfinished work Alex has raised. When he mentions something to look into later, add it there; when an item is done, delete it.
+- `.agents/`: apart from `skills/`, local working notes, ignored by Git. `.agents/backlog.md` holds ideas, open questions and unfinished work Alex has raised. When he mentions something to look into later, add it there; when an item is done, delete it.
 
 ## Rules
 
@@ -28,4 +28,4 @@
 
 ## Validation
 
-After changing the skill, a guide or the catalog, have a fresh agent run setup against a scratch home folder, then check the stack file it writes against `skills/zstack/references/stack-file.md`.
+After changing the skill, a guide or the catalog, have a fresh agent run setup against a scratch home folder, then check the stack file it writes against `.agents/skills/zstack/references/stack-file.md`.
